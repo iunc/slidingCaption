@@ -1,0 +1,62 @@
+.wrapper {
+  width: 500px;
+  margin: 150px auto;
+  font-family: arial;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper:hover img {
+  transform: scale(1.09);
+}
+.wrapper:hover .icons {
+  bottom: 0;
+}
+.wrapper:hover .content {
+  top: 0;
+}
+.wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.wrapper .content {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  text-align: justify;
+  box-sizing: border-box;
+  color: white;
+  height: 100%;
+  transition: all 0.5s;
+}
+.wrapper .content h3 {
+  text-align: center;
+  border-bottom: 1px solid #808080;
+  font-size: 25px;
+  padding: 0 10px 20px 10px;
+}
+.wrapper .content p {
+  padding: 0 20px 15px 20px;
+  border-bottom: 1px solid #808080;
+}
+.wrapper .icons {
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  padding: 0 0 10px 130px;
+  position: absolute;
+  cursor: pointer;
+  bottom: -100%;
+  transition: all 0.5s;
+}
+.wrapper .icons i {
+  margin: 0 10px;
+  transition: all 0.5s;
+}
+.wrapper .icons i:hover {
+  color: violet;
+}
+
+/*# sourceMappingURL=style.css.map */
